@@ -23,6 +23,9 @@ jobs:
       with:
         node-version: '16'
 
+    - name: Install dependencies
+      run: npm install
+
     - name: Fetch Hugo theme
       run: git submodule update --init --recursive
 
@@ -32,6 +35,5 @@ jobs:
     - name: Deploy to GitHub Pages
       uses: peaceiris/actions-gh-pages@v3
       with:
-        github_token: ${{ secrets.GITHUB_TOKEN }}
+        personal_token: ${{ secrets.GH_PAT }}
         publish_dir: ./public
-
