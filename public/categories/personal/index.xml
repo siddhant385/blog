@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+    <channel>
+        <title>Personal on Siddhant Sharma&#39;s Blog</title>
+        <link>http://localhost:1313/blog/categories/personal/</link>
+        <description>Recent content in Personal on Siddhant Sharma&#39;s Blog</description>
+        <generator>Hugo -- gohugo.io</generator>
+        <language>en</language>
+        <copyright>siddhant385</copyright>
+        <lastBuildDate>Fri, 19 Jul 2024 00:00:00 +0000</lastBuildDate><atom:link href="http://localhost:1313/blog/categories/personal/index.xml" rel="self" type="application/rss+xml" /><item>
+        <title>My First Blog</title>
+        <link>http://localhost:1313/blog/p/my-first-blog/</link>
+        <pubDate>Fri, 19 Jul 2024 00:00:00 +0000</pubDate>
+        
+        <guid>http://localhost:1313/blog/p/my-first-blog/</guid>
+        <description>&lt;img src="http://localhost:1313/blog/p/my-first-blog/image.png" alt="Featured image of post My First Blog" /&gt;&lt;h1 id=&#34;welcome-to-my-blog-&#34;&gt;Welcome to My Blog 🎉
+&lt;/h1&gt;&lt;h2 id=&#34;introduction&#34;&gt;Introduction
+&lt;/h2&gt;&lt;p&gt;Hello everyone! 👋 My name is Siddhant Sharma, and I’m thrilled to welcome you to my blog. I recently graduated from Jawahar Navodaya Vidyalaya, Badwara Katni, and am currently planning my undergraduate studies. This blog is my space to share my journey, experiences, and passions.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://via.placeholder.com/800x400.png?text=Welcome&amp;#43;to&amp;#43;My&amp;#43;Blog&#34;
+	
+	
+	
+	loading=&#34;lazy&#34;
+	
+		alt=&#34;Welcome Image&#34;
+	
+	
+&gt;&lt;/p&gt;
+&lt;h2 id=&#34;my-journey-into-coding-&#34;&gt;My Journey into Coding 💻
+&lt;/h2&gt;&lt;p&gt;Ever since I was introduced to coding, I’ve been fascinated by the endless possibilities it offers. From solving challenging problems to creating innovative solutions, coding has become an integral part of my life. I started with basic programming languages and gradually moved on to more complex projects. Each step of the way has been both challenging and rewarding.&lt;/p&gt;
+&lt;h3 id=&#34;my-first-project-hello-world-&#34;&gt;My First Project: Hello World 🌍
+&lt;/h3&gt;&lt;p&gt;One of my first projects was the classic &amp;ldquo;Hello World&amp;rdquo; program. It may seem simple, but it marked the beginning of an exciting journey into the world of coding.&lt;/p&gt;
+&lt;img src=&#34;https://upload.wikimedia.org/wikipedia/commons/0/05/HelloWorld_with_JavaScript.png&#34; alt=&#34;Hello World Program&#34; width=&#34;600&#34;&gt;
+&lt;h3 id=&#34;my-hobbies-and-interests-&#34;&gt;My Hobbies and Interests 🌟
+&lt;/h3&gt;&lt;p&gt;Apart from coding, I have a deep love for traveling. ✈️ Exploring new places and cultures not only enriches my life but also fuels my creativity. I also enjoy keeping up with the latest technological advancements and experimenting with new tools and frameworks. Creating something unique, whether it&amp;rsquo;s a piece of code or a personal project, gives me immense satisfaction.&lt;/p&gt;
+&lt;h3 id=&#34;my-educational-path-&#34;&gt;My Educational Path 🎓
+&lt;/h3&gt;&lt;p&gt;I completed my high school education at Jawahar Navodaya Vidyalaya, Badwara Katni. The supportive environment and excellent faculty there played a significant role in shaping my academic journey. Now, as I plan my undergraduate studies, I’m excited about the new learning opportunities and experiences that lie ahead.&lt;/p&gt;
+&lt;h3 id=&#34;why-i-love-coding-&#34;&gt;Why I Love Coding 💖
+&lt;/h3&gt;&lt;p&gt;Coding is not just a skill but a passion for me. It’s amazing how a few lines of code can transform ideas into reality. My favorite programming languages include Python and JavaScript, and I’ve worked on several projects that I’m proud of. One such project is a personal website I built from scratch, which taught me a lot about web development.&lt;/p&gt;
+&lt;h3 id=&#34;github-stats-&#34;&gt;GitHub Stats 📊
+&lt;/h3&gt;&lt;p&gt;Check out my GitHub stats to see some of the projects I&amp;rsquo;ve been working on:&lt;/p&gt;
+&lt;img src=&#34;https://github-readme-stats.vercel.app/api?username=siddhant385&amp;show_icons=true&amp;theme=radical&#34; alt=&#34;GitHub Stats&#34;&gt;
+&lt;h3 id=&#34;future-plans-and-aspirations-&#34;&gt;Future Plans and Aspirations 🚀
+&lt;/h3&gt;&lt;p&gt;Looking ahead, I have several goals. In the short term, I aim to master advanced algorithms and data structures. In the long run, I aspire to become a full-stack developer and contribute to open-source projects. I’m particularly interested in artificial intelligence and look forward to diving deeper into it.&lt;/p&gt;
+&lt;h3 id=&#34;call-to-action-&#34;&gt;Call to Action 📬
+&lt;/h3&gt;&lt;p&gt;Thank you for visiting my blog! I hope you find my posts interesting and informative. Feel free to connect with me on GitHub, Instagram, or via email at &lt;a class=&#34;link&#34; href=&#34;mailto:ssiddhant385@gmail.com&#34; &gt;ssiddhant385@gmail.com&lt;/a&gt;. Your feedback and suggestions are always welcome. Stay tuned for more updates!&lt;/p&gt;
+&lt;div style=&#34;display: flex; gap: 10px;&#34;&gt;
+&lt;a href=&#34;https://www.github.com/siddhant385&#34; target=&#34;_blank&#34;&gt;
+  &lt;img src=&#34;https://upload.wikimedia.org/wikipedia/commons/9/91/Octicons-mark-github.svg&#34; alt=&#34;GitHub&#34; width=&#34;30&#34; height=&#34;30&#34;&gt;
+&lt;/a&gt;
+&lt;a href=&#34;https://www.instagram.com/s.i.d385&#34; target=&#34;_blank&#34;&gt;
+  &lt;img src=&#34;https://upload.wikimedia.org/wikipedia/commons/a/a5/Instagram_icon.png&#34; alt=&#34;Instagram&#34; width=&#34;30&#34; height=&#34;30&#34;&gt;
+&lt;/a&gt;
+&lt;a href=&#34;mailto:ssiddhant385@gmail.com&#34;&gt;
+  &lt;img src=&#34;https://upload.wikimedia.org/wikipedia/commons/4/4e/Mail_Icon.svg&#34; alt=&#34;Email&#34; width=&#34;30&#34; height=&#34;30&#34;&gt;
+&lt;/a&gt;
+&lt;a href=&#34;https://some.tm.me&#34; target=&#34;_blank&#34;&gt;
+  &lt;img src=&#34;https://upload.wikimedia.org/wikipedia/commons/8/82/Telegram_logo.svg&#34; alt=&#34;Telegram&#34; width=&#34;30&#34; height=&#34;30&#34;&gt;
+&lt;/a&gt;
+&lt;/div&gt;
+```
+</description>
+        </item>
+        
+    </channel>
+</rss>
