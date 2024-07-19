@@ -11,7 +11,7 @@ tags = [
 ]
 categories = [
     "themes",
-    "syntax",
+    "Siddhant",
 ]
 series = ["Themes Guide"]
 aliases = ["migrate-from-jekyl"]
