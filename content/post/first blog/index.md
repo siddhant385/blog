@@ -16,7 +16,7 @@ image = "image.png"
 
 ## Introduction
 
-Hello everyone! 👋 My name is Siddhant Sharma, and I’m thrilled to welcome you to my blog. I recently graduated from Jawahar Navodaya Vidyalaya, Badwara Katni, and am currently planning my undergraduate studies. This blog is my space to share my journey, experiences, and passions.
+Hello everyone! 👋 My name is Siddhant Sharma, and I’m thrilled to welcome you to my blog. I recently completed my highschool from Jawahar Navodaya Vidyalaya, Badwara Katni, and am currently planning my undergraduate studies. This blog is my space to share my journey, experiences, and passions.
 
 ![Welcome Image](https://via.placeholder.com/800x400.png?text=Welcome+to+My+Blog)
 
