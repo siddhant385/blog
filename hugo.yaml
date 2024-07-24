@@ -67,15 +67,14 @@ params:
 
     comments:
         enabled: true
-        provider: disqus
-        disqusShortname: siddhantblog
-
+        provider: disqusjs
+        
         disqusjs:
-            shortname: 
-            apiUrl: 
-            apiKey:
-            admin:
-            adminLabel:
+            shortname: siddhantblog
+            apiUrl: https://disqus.com/api/oauth/2.0/authorize/
+            apiKey: y3Oy9ASAyDAVpcu8ChZA11Mz3JwRAAsGQszELWoh12wVhLCJL9gJgRrdORzGSqo8
+            admin: https://siddhantblog.disqus.com/admin/
+            adminLabel: 
 
         utterances:
             repo:
