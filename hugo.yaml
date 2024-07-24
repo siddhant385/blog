@@ -67,7 +67,7 @@ params:
 
     comments:
         enabled: true
-        provider: disqus
+        provider: cusdis
 
         disqusjs:
             shortname:
@@ -146,8 +146,8 @@ params:
             clientSecret:
 
         cusdis:
-            host:
-            id:
+            host: https://cusdis.com
+            id: c7f1f9bd-eadc-4898-bd9b-b774b4d30249
     widgets:
         homepage:
             - type: search
