@@ -67,11 +67,12 @@ params:
 
     comments:
         enabled: true
-        provider: cusdis
+        provider: disqus
+        disqusShortname: siddhantblog
 
         disqusjs:
-            shortname:
-            apiUrl:
+            shortname: 
+            apiUrl: 
             apiKey:
             admin:
             adminLabel:
