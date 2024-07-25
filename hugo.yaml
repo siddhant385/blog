@@ -237,3 +237,8 @@ markup:
         lineNos: true
         lineNumbersInTable: true
         tabWidth: 4
+
+sitemap:
+  changefreq: "daily"
+  priority: 0.5
+

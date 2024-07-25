@@ -9,6 +9,7 @@ categories = [
 tags = [
     "Phishing",
     "Cyber",
+    "PythonAnywhere",
 ]
 image = "image.jpeg"
 +++

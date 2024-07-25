@@ -13,7 +13,7 @@
         <pubDate>Thu, 25 Jul 2024 00:00:00 +0000</pubDate>
         
         <guid>http://localhost:1313/blog/p/flask-phishing/</guid>
-        <description>&lt;img src="http://localhost:1313/blog/image.png" alt="Featured image of post Flask-Phishing" /&gt;&lt;h1 id=&#34;flask-phishing&#34;&gt;Flask-Phishing
+        <description>&lt;img src="http://localhost:1313/blog/p/flask-phishing/image.jpeg" alt="Featured image of post Flask-Phishing" /&gt;&lt;h1 id=&#34;flask-phishing&#34;&gt;Flask-Phishing
 &lt;/h1&gt;&lt;h2 id=&#34;introduction&#34;&gt;Introduction
 &lt;/h2&gt;&lt;p&gt;Hey there, fellow tech adventurers! 🎉 Ready to dive into the sneaky world of phishing? Don&amp;rsquo;t worry; this is all in good fun and education. Today, we’re going to explore a Python Flask phishing framework. Grab your virtual trench coat and magnifying glass, and let’s go!&lt;/p&gt;
 &lt;h2 id=&#34;phishing-the-internets-dark-alley-&#34;&gt;Phishing: The Internet&amp;rsquo;s Dark Alley 🕵️‍♂️
@@ -68,45 +68,28 @@
 &lt;ol start=&#34;8&#34;&gt;
 &lt;li&gt;Add New Web App: Click on &amp;lsquo;Add new web app&amp;rsquo; and select &amp;lsquo;Flask&amp;rsquo;&lt;/li&gt;
 &lt;/ol&gt;
-&lt;style&gt;
-  .image-gallery {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 10px;
-  }
-
-  .image-gallery img {
-    width: 100%;
-    border-radius: 8px;
-    opacity: 0; /* Start with images hidden */
-  }
-&lt;/style&gt;
-&lt;div class=&#34;image-gallery&#34;&gt;
-  &lt;div style=&#34;flex: 1; min-width: 200px; max-width: 300px;&#34;&gt;
-    &lt;img src=&#34;2.png&#34; alt=&#34;Step 2&#34; style=&#34;width: 100%; border-radius: 8px;&#34;/&gt;
-  &lt;/div&gt;
-  &lt;div style=&#34;flex: 1; min-width: 200px; max-width: 300px;&#34;&gt;
-    &lt;img src=&#34;3.png&#34; alt=&#34;Step 2&#34; style=&#34;width: 100%; border-radius: 8px;&#34;/&gt;
-  &lt;/div&gt;
-  &lt;div style=&#34;flex: 1; min-width: 200px; max-width: 300px;&#34;&gt;
-    &lt;img src=&#34;4.png&#34; alt=&#34;Step 3&#34; style=&#34;width: 100%; border-radius: 8px;&#34;/&gt;
-  &lt;/div&gt;
-  &lt;div style=&#34;flex: 1; min-width: 200px; max-width: 300px;&#34;&gt;
-    &lt;img src=&#34;5.png&#34; alt=&#34;Step 3&#34; style=&#34;width: 100%; border-radius: 8px;&#34;/&gt;
-  &lt;/div&gt;
-&lt;script&gt;
-  document.addEventListener(&#34;DOMContentLoaded&#34;, function() {
-    const images = document.querySelectorAll(&#39;.image-gallery img&#39;);
-    images.forEach((img, index) =&gt; {
-      img.style.opacity = 0;
-      img.style.transition = `opacity 0.5s ease ${index * 0.2}s`;
-      img.style.opacity = 1;
-    });
-  });
-&lt;/script&gt;
-  &lt;!-- Add more images as needed --&gt;
+&lt;div style=&#34;text-align: center;&#34;&gt;
+  &lt;img src=&#34;2.png&#34; alt=&#34;1.png&#34; width=&#34;800&#34;/&gt;
 &lt;/div&gt;
+&lt;ul&gt;
+&lt;li&gt;Next Step&lt;/li&gt;
+&lt;/ul&gt;
+&lt;div style=&#34;text-align: center;&#34;&gt;
+  &lt;img src=&#34;3.png&#34; alt=&#34;1.png&#34; width=&#34;800&#34;/&gt;
+&lt;/div&gt;
+&lt;ul&gt;
+&lt;li&gt;Next Step&lt;/li&gt;
+&lt;/ul&gt;
+&lt;div style=&#34;text-align: center;&#34;&gt;
+  &lt;img src=&#34;4.png&#34; alt=&#34;1.png&#34; width=&#34;800&#34;/&gt;
+&lt;/div&gt;
+&lt;ul&gt;
+&lt;li&gt;Next Step&lt;/li&gt;
+&lt;/ul&gt;
+&lt;div style=&#34;text-align: center;&#34;&gt;
+  &lt;img src=&#34;5.png&#34; alt=&#34;1.png&#34; width=&#34;800&#34;/&gt;
+&lt;/div&gt;
+  &lt;!-- Add more images as needed --&gt;
  &lt;!-- 2.png --&gt;
 &lt;!-- 3.png --&gt;
 &lt;!-- 4.png --&gt;
