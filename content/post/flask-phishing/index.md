@@ -53,25 +53,25 @@ Knowing about phishing is crucial because it shows just how easy it is to fall f
 
 ## Step-by-Step Guide 🚀
 
-1. Create an Account: Sign up on PythonAnywhere. Yes, you know how to create an account. 🙄
+1. **Create an Account**: Sign up on PythonAnywhere. Yes, you know how to create an account. 🙄
 
-2. Dashboard Navigation: Head to the dashboard.
+2. **Dashboard Navigation**: Head to the dashboard.
 
-3. Open a New Console: Click on 'New Console' and select 'Bash'.
+3. **Open a New Console**: Click on 'New Console' and select 'Bash'.
 
-4. Clone the Repository: Enter `git clone https://github.com/siddhant385/flask-phishing` in the console.
+4. **Clone the Repository**: Enter `git clone https://github.com/siddhant385/flask-phishing` in the console.
 
-5. Navigate to Directory: Type `cd flask-phishing` in the console
+5. **Navigate to Directory**: Type `cd flask-phishing` in the console
 
-6. Install Requirements: Run `pip install -r requirements.txt.`
+6. **Install Requirements**: Run `pip install -r requirements.txt.`
 
-7. Open Web Tab: Go back to the dashboard and click on 'Web'.
+7. **Open Web Tab**: Go back to the dashboard and click on 'Web'.
 
 <div style="text-align: center;">
   <img src="1.png" alt="1.png" width="800"/>
 </div>
 
-8. Add New Web App: Click on 'Add new web app' and select 'Flask'
+8. **Add New Web App**: Click on 'Add new web app' and select 'Flask'
 
 <div style="text-align: center;">
   <img src="2.png" alt="1.png" width="800"/>
@@ -107,7 +107,7 @@ Knowing about phishing is crucial because it shows just how easy it is to fall f
 
 <!-- 5.png -->
 
-9. Configure Path: Enter the path to your main script, e.g., **/home/yourusername/flask-phishing/main.py.**
+9. **Configure Path**: Enter the path to your main script, e.g., **/home/yourusername/flask-phishing/main.py.**
 
 <div style="text-align: center;">
   <img src="6.png" alt="6.png" width="800"/>
@@ -137,12 +137,14 @@ Url is : https://github.com/siddhant385/flask-phishing/blob/main/main.py
 <div style="text-align: center;">
   <img src="10.png" alt="10.png" width="800"/>
 </div>
-14. Reload Your Site: Click on 'Reload' on the PythonAnywhere dashboard.
+
+14. **Reload Your Site**: Click on 'Reload' on the PythonAnywhere dashboard.
 
 <div style="text-align: center;">
   <img src="11.png" alt="11.png" width="800"/>
 </div>
-15. Access Your Site: Go to yourusername.pythonanywhere.com. Use default credentials **admin** and **root** to log in, then change them immediately.
+
+15. **Access Your Site**: Go to yourusername.pythonanywhere.com. Use default credentials **admin** and **root** to log in, then change them immediately.
 
 <div style="text-align: center;">
   <img src="12.png" alt="12.png" width="800"/>
