@@ -7,7 +7,15 @@
         <generator>Hugo -- gohugo.io</generator>
         <language>en</language>
         <copyright>siddhant385</copyright>
-        <lastBuildDate>Fri, 19 Jul 2024 00:00:00 +0000</lastBuildDate><atom:link href="http://localhost:1313/blog/categories/index.xml" rel="self" type="application/rss+xml" /><item>
+        <lastBuildDate>Thu, 25 Jul 2024 00:00:00 +0000</lastBuildDate><atom:link href="http://localhost:1313/blog/categories/index.xml" rel="self" type="application/rss+xml" /><item>
+        <title>Tech</title>
+        <link>http://localhost:1313/blog/categories/tech/</link>
+        <pubDate>Thu, 25 Jul 2024 00:00:00 +0000</pubDate>
+        
+        <guid>http://localhost:1313/blog/categories/tech/</guid>
+        <description></description>
+        </item>
+        <item>
         <title>Myself</title>
         <link>http://localhost:1313/blog/categories/myself/</link>
         <pubDate>Fri, 19 Jul 2024 00:00:00 +0000</pubDate>

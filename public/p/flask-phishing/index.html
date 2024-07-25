@@ -1,0 +1,767 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+    <head><script src="/blog/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=blog/livereload" data-no-instant defer></script><meta charset='utf-8'>
+<meta name='viewport' content='width=device-width, initial-scale=1'><meta name='description' content="Phishing and Phishing Framework Built Over Flask">
+<title>Flask-Phishing</title>
+
+<link rel='canonical' href='http://localhost:1313/blog/p/flask-phishing/'>
+
+<link rel="stylesheet" href="/blog/scss/style.min.0304c6baf04e01a8fe70693791cb744d56a3578a3120a8796cefc66825aa39c7.css"><meta property='og:title' content="Flask-Phishing">
+<meta property='og:description' content="Phishing and Phishing Framework Built Over Flask">
+<meta property='og:url' content='http://localhost:1313/blog/p/flask-phishing/'>
+<meta property='og:site_name' content='Siddhant Sharma&#39;s Blog'>
+<meta property='og:type' content='article'><meta property='article:section' content='Post' /><meta property='article:tag' content='Phishing' /><meta property='article:tag' content='Cyber' /><meta property='article:published_time' content='2024-07-25T00:00:00&#43;00:00'/><meta property='article:modified_time' content='2024-07-25T00:00:00&#43;00:00'/><meta property='og:image' content='http://localhost:1313/blog/p/flask-phishing/image.jpeg' />
+<meta name="twitter:title" content="Flask-Phishing">
+<meta name="twitter:description" content="Phishing and Phishing Framework Built Over Flask"><meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:image" content='http://localhost:1313/blog/p/flask-phishing/image.jpeg' />
+  
+    
+      <script async src="https://www.googletagmanager.com/gtag/js?id=G-157FZM79M8"></script>
+      <script>
+        var doNotTrack = false;
+        if ( false ) {
+          var dnt = (navigator.doNotTrack || window.doNotTrack || navigator.msDoNotTrack);
+          var doNotTrack = (dnt == "1" || dnt == "yes");
+        }
+        if (!doNotTrack) {
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          gtag('js', new Date());
+          gtag('config', 'G-157FZM79M8');
+        }
+      </script>
+    
+  
+
+
+    </head>
+    <body class="
+    article-page
+    ">
+    <script>
+        (function() {
+            const colorSchemeKey = 'StackColorScheme';
+            if(!localStorage.getItem(colorSchemeKey)){
+                localStorage.setItem(colorSchemeKey, "auto");
+            }
+        })();
+    </script><script>
+    (function() {
+        const colorSchemeKey = 'StackColorScheme';
+        const colorSchemeItem = localStorage.getItem(colorSchemeKey);
+        const supportDarkMode = window.matchMedia('(prefers-color-scheme: dark)').matches === true;
+
+        if (colorSchemeItem == 'dark' || colorSchemeItem === 'auto' && supportDarkMode) {
+            
+
+            document.documentElement.dataset.scheme = 'dark';
+        } else {
+            document.documentElement.dataset.scheme = 'light';
+        }
+    })();
+</script>
+<div class="container main-container flex on-phone--column extended"><aside class="sidebar left-sidebar sticky ">
+    <button class="hamburger hamburger--spin" type="button" id="toggle-menu" aria-label="Toggle Menu">
+        <span class="hamburger-box">
+            <span class="hamburger-inner"></span>
+        </span>
+    </button>
+
+    <header>
+        
+            
+            <figure class="site-avatar">
+                <a href="/blog/">
+                
+                    
+                    
+                    
+                        
+                        <img src="/blog/img/profile_hu5d3bd7439a144824d4c0d9011f71e35c_515866_300x0_resize_q75_box.jpg" width="300"
+                            height="382" class="site-logo" loading="lazy" alt="Avatar">
+                    
+                
+                </a>
+                
+                    <span class="emoji">🍥</span>
+                
+            </figure>
+            
+        
+        
+        <div class="site-meta">
+            <h1 class="site-name"><a href="/blog">Siddhant Sharma&#39;s Blog</a></h1>
+            <h2 class="site-description">The place where I speak with freedom.</h2>
+        </div>
+    </header><ol class="menu-social">
+            
+                <li>
+                    <a 
+                        href='https://github.com/siddhant385'
+                        target="_blank"
+                        title="GitHub"
+                        rel="me"
+                    >
+                        
+                        
+                            <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brand-github" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+  <path d="M9 19c-4.3 1.4 -4.3 -2.5 -6 -3m12 5v-3.5c0 -1 .1 -1.4 -.5 -2c2.8 -.3 5.5 -1.4 5.5 -6a4.6 4.6 0 0 0 -1.3 -3.2a4.2 4.2 0 0 0 -.1 -3.2s-1.1 -.3 -3.5 1.3a12.3 12.3 0 0 0 -6.2 0c-2.4 -1.6 -3.5 -1.3 -3.5 -1.3a4.2 4.2 0 0 0 -.1 3.2a4.6 4.6 0 0 0 -1.3 3.2c0 4.6 2.7 5.7 5.5 6c-.6 .6 -.6 1.2 -.5 2v3.5" />
+</svg>
+
+
+
+                        
+                    </a>
+                </li>
+            
+                <li>
+                    <a 
+                        href='https://instagram.com/s.i.d385'
+                        target="_blank"
+                        title="Instagram"
+                        rel="me"
+                    >
+                        
+                        
+                            <svg  xmlns="http://www.w3.org/2000/svg"  width="24"  height="24"  viewBox="0 0 24 24"  fill="none"  stroke="currentColor"  stroke-width="2"  stroke-linecap="round"  stroke-linejoin="round"  class="icon icon-tabler icons-tabler-outline icon-tabler-brand-instagram"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M4 4m0 4a4 4 0 0 1 4 -4h8a4 4 0 0 1 4 4v8a4 4 0 0 1 -4 4h-8a4 4 0 0 1 -4 -4z" /><path d="M12 12m-3 0a3 3 0 1 0 6 0a3 3 0 1 0 -6 0" /><path d="M16.5 7.5l0 .01" /></svg>
+                        
+                    </a>
+                </li>
+            
+        </ol><ol class="menu" id="main-menu">
+        
+        
+        
+        <li >
+            <a href='/blog/' >
+                
+                
+                
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-home" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <polyline points="5 12 3 12 12 3 21 12 19 12" />
+  <path d="M5 12v7a2 2 0 0 0 2 2h10a2 2 0 0 0 2 -2v-7" />
+  <path d="M9 21v-6a2 2 0 0 1 2 -2h2a2 2 0 0 1 2 2v6" />
+</svg>
+
+
+
+                
+                <span>Home</span>
+            </a>
+        </li>
+        
+        
+        <li >
+            <a href='/blog/about/' >
+                
+                
+                
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-user" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="12" cy="7" r="4" />
+  <path d="M6 21v-2a4 4 0 0 1 4 -4h4a4 4 0 0 1 4 4v2" />
+</svg>
+
+
+
+                
+                <span>About</span>
+            </a>
+        </li>
+        
+        
+        <li >
+            <a href='/blog/archives/' >
+                
+                
+                
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-archive" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <rect x="3" y="4" width="18" height="4" rx="2" />
+  <path d="M5 8v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2 -2v-10" />
+  <line x1="10" y1="12" x2="14" y2="12" />
+</svg>
+
+
+
+                
+                <span>Archives</span>
+            </a>
+        </li>
+        
+        
+        <li >
+            <a href='/blog/search/' >
+                
+                
+                
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-search" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="10" cy="10" r="7" />
+  <line x1="21" y1="21" x2="15" y2="15" />
+</svg>
+
+
+
+                
+                <span>Search</span>
+            </a>
+        </li>
+        
+        
+        <li >
+            <a href='/blog/links/' >
+                
+                
+                
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-link" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <path d="M10 14a3.5 3.5 0 0 0 5 0l4 -4a3.5 3.5 0 0 0 -5 -5l-.5 .5" />
+  <path d="M14 10a3.5 3.5 0 0 0 -5 0l-4 4a3.5 3.5 0 0 0 5 5l.5 -.5" />
+</svg>
+
+
+
+                
+                <span>Links</span>
+            </a>
+        </li>
+        
+        <li class="menu-bottom-section">
+            <ol class="menu">
+
+                
+                    <li id="dark-mode-toggle">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-toggle-left" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="8" cy="12" r="2" />
+  <rect x="2" y="6" width="20" height="12" rx="6" />
+</svg>
+
+
+
+                        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-toggle-right" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="16" cy="12" r="2" />
+  <rect x="2" y="6" width="20" height="12" rx="6" />
+</svg>
+
+
+
+                        <span>Dark Mode</span>
+                    </li>
+                
+            </ol>
+        </li>
+    </ol>
+</aside>
+
+    <aside class="sidebar right-sidebar sticky">
+        
+            
+                
+    <section class="widget archives">
+        <div class="widget-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-hash" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <line x1="5" y1="9" x2="19" y2="9" />
+  <line x1="5" y1="15" x2="19" y2="15" />
+  <line x1="11" y1="4" x2="7" y2="20" />
+  <line x1="17" y1="4" x2="13" y2="20" />
+</svg>
+
+
+
+        </div>
+        <h2 class="widget-title section-title">Table of contents</h2>
+        
+        <div class="widget--toc">
+            <nav id="TableOfContents">
+  <ol>
+    <li><a href="#introduction">Introduction</a></li>
+    <li><a href="#phishing-the-internets-dark-alley-">Phishing: The Internet&rsquo;s Dark Alley 🕵️‍♂️</a>
+      <ol>
+        <li><a href="#what-on-earth-is-phishing-">What on Earth is Phishing? 🤔</a></li>
+        <li><a href="#so-why-should-i-care-">So, Why Should I Care? 🤷‍♀️</a></li>
+        <li><a href="#what-makes-this-tool-special-">What Makes This Tool Special? 🎉</a></li>
+      </ol>
+    </li>
+    <li><a href="#installation-on-webhosting-">Installation on Webhosting 🌐</a></li>
+    <li><a href="#step-by-step-guide-">Step-by-Step Guide 🚀</a>
+      <ol>
+        <li><a href="#congrats-">Congrats! 🎉</a></li>
+      </ol>
+    </li>
+    <li><a href="#aftermath">Aftermath🎭</a></li>
+    <li><a href="#prevention-tips-">Prevention Tips 🚨</a></li>
+    <li><a href="#conclusion">Conclusion</a></li>
+  </ol>
+</nav>
+        </div>
+    </section>
+
+            
+        
+    </aside>
+
+
+            <main class="main full-width">
+    <article class="has-image main-article">
+    <header class="article-header">
+        <div class="article-image">
+            <a href="/blog/p/flask-phishing/">
+                <img src="/blog/p/flask-phishing/image_hu9d8f26c3dd321a9c11daa7173c381ec2_52482_800x0_resize_q75_box.jpeg"
+                        srcset="/blog/p/flask-phishing/image_hu9d8f26c3dd321a9c11daa7173c381ec2_52482_800x0_resize_q75_box.jpeg 800w, /blog/p/flask-phishing/image_hu9d8f26c3dd321a9c11daa7173c381ec2_52482_1600x0_resize_q75_box.jpeg 1600w"
+                        width="800" 
+                        height="504" 
+                        loading="lazy"
+                        alt="Featured image of post Flask-Phishing" />
+                
+            </a>
+        </div>
+    
+
+    <div class="article-details">
+    
+    <header class="article-category">
+        
+            <a href="/blog/categories/tech/" >
+                Tech
+            </a>
+        
+    </header>
+    
+
+    <div class="article-title-wrapper">
+        <h2 class="article-title">
+            <a href="/blog/p/flask-phishing/">Flask-Phishing</a>
+        </h2>
+    
+        
+        <h3 class="article-subtitle">
+            Phishing and Phishing Framework Built Over Flask
+        </h3>
+        
+    </div>
+
+    
+    
+    
+    
+    <footer class="article-time">
+        
+            <div>
+                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-calendar-time" width="56" height="56" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <path d="M11.795 21h-6.795a2 2 0 0 1 -2 -2v-12a2 2 0 0 1 2 -2h12a2 2 0 0 1 2 2v4" />
+  <circle cx="18" cy="18" r="4" />
+  <path d="M15 3v4" />
+  <path d="M7 3v4" />
+  <path d="M3 11h16" />
+  <path d="M18 16.496v1.504l1 1" />
+</svg>
+                <time class="article-time--published">Jul 25, 2024</time>
+            </div>
+        
+
+        
+            <div>
+                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-clock" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="12" cy="12" r="9" />
+  <polyline points="12 7 12 12 15 15" />
+</svg>
+
+
+
+                <time class="article-time--reading">
+                    4 minute read
+                </time>
+            </div>
+        
+    </footer>
+    
+
+    
+</div>
+
+</header>
+
+    <section class="article-content">
+    
+    
+    <h1 id="flask-phishing">Flask-Phishing
+</h1><h2 id="introduction">Introduction
+</h2><p>Hey there, fellow tech adventurers! 🎉 Ready to dive into the sneaky world of phishing? Don&rsquo;t worry; this is all in good fun and education. Today, we’re going to explore a Python Flask phishing framework. Grab your virtual trench coat and magnifying glass, and let’s go!</p>
+<h2 id="phishing-the-internets-dark-alley-">Phishing: The Internet&rsquo;s Dark Alley 🕵️‍♂️
+</h2><blockquote>
+<p>&ldquo;Phishing is a major problem because there really is no patch for human stupidity.&rdquo; - Mike Danseglio</p>
+</blockquote>
+<h3 id="what-on-earth-is-phishing-">What on Earth is Phishing? 🤔
+</h3><p>Imagine getting an email from your favorite pizza place offering free pizza for a year. You click the link, and boom! Your personal info is stolen. Phishing is like that—bad guys pretending to be someone you trust to steal your information. Sneaky, huh?</p>
+<p>Phishing is a sneaky trick where bad guys pretend to be someone you know online to steal your personal info. Imagine a wolf in sheep&rsquo;s clothing, but the sheep is your favorite website. The site looks legit but is made to trick you. Always check twice before entering your info!</p>
+<h3 id="so-why-should-i-care-">So, Why Should I Care? 🤷‍♀️
+</h3><p>Knowing about phishing is crucial because it shows just how easy it is to fall for these tricks. But here’s the twist: we’re going to use this knowledge for good. I’ll show you how to set up a phishing site (purely for educational purposes, of course).</p>
+<p><strong>Disclaimer</strong>: This tool is for ethical hackers only. If you&rsquo;re not one of those, please go back to watching cat videos. 😸 We’re not responsible if you turn into a cyber villain. Use at your own risk, and remember, your mom was right about talking to strangers online. 🚫</p>
+<h3 id="what-makes-this-tool-special-">What Makes This Tool Special? 🎉
+</h3><ul>
+<li><strong>Flask-Powered</strong>: Deploy it on the web with ease.</li>
+<li><strong>No Port Forwarding</strong>: Forget the hassle of port forwarding or ngrok.</li>
+<li><strong>User-Friendly</strong>: Simple web interface that even your grandma could use (probably).</li>
+<li><strong>Accessible</strong>: Just need the internet and a web browser.</li>
+</ul>
+<h2 id="installation-on-webhosting-">Installation on Webhosting 🌐
+</h2><ol>
+<li>Requirements: Internet and a device (laptop recommended, but you can try your luck with a mobile phone).</li>
+<li>Deployment Platform: We&rsquo;ll use PythonAnywhere.</li>
+</ol>
+<h2 id="step-by-step-guide-">Step-by-Step Guide 🚀
+</h2><ol>
+<li>
+<p>Create an Account: Sign up on PythonAnywhere. Yes, you know how to create an account. 🙄</p>
+</li>
+<li>
+<p>Dashboard Navigation: Head to the dashboard.</p>
+</li>
+<li>
+<p>Open a New Console: Click on &lsquo;New Console&rsquo; and select &lsquo;Bash&rsquo;.</p>
+</li>
+<li>
+<p>Clone the Repository: Enter <code>git clone https://github.com/siddhant385/flask-phishing</code> in the console.</p>
+</li>
+<li>
+<p>Navigate to Directory: Type <code>cd flask-phishing</code> in the console</p>
+</li>
+<li>
+<p>Install Requirements: Run <code>pip install -r requirements.txt.</code></p>
+</li>
+<li>
+<p>Open Web Tab: Go back to the dashboard and click on &lsquo;Web&rsquo;.</p>
+</li>
+</ol>
+<div style="text-align: center;">
+  <img src="1.png" alt="1.png" width="800"/>
+</div>
+<ol start="8">
+<li>Add New Web App: Click on &lsquo;Add new web app&rsquo; and select &lsquo;Flask&rsquo;</li>
+</ol>
+<div style="text-align: center;">
+  <img src="2.png" alt="1.png" width="800"/>
+</div>
+<ul>
+<li>Next Step</li>
+</ul>
+<div style="text-align: center;">
+  <img src="3.png" alt="1.png" width="800"/>
+</div>
+<ul>
+<li>Next Step</li>
+</ul>
+<div style="text-align: center;">
+  <img src="4.png" alt="1.png" width="800"/>
+</div>
+<ul>
+<li>Next Step</li>
+</ul>
+<div style="text-align: center;">
+  <img src="5.png" alt="1.png" width="800"/>
+</div>
+  <!-- Add more images as needed -->
+ <!-- 2.png -->
+<!-- 3.png -->
+<!-- 4.png -->
+<!-- 5.png -->
+<ol start="9">
+<li>Configure Path: Enter the path to your main script, e.g., <strong>/home/yourusername/flask-phishing/main.py.</strong></li>
+</ol>
+<div style="text-align: center;">
+  <img src="6.png" alt="6.png" width="800"/>
+</div>
+<ol start="10">
+<li>After you have clicked next a web dashboard will be opened scroll down and then click go to directory of Source code as given in picture below</li>
+</ol>
+<div style="text-align: center;">
+  <img src="7.png" alt="7.png" width="800"/>
+</div>
+<ol start="11">
+<li>Now click on main.py</li>
+</ol>
+<div style="text-align: center;">
+  <img src="8.png" alt="8.png" width="800"/>
+</div>
+<ol start="12">
+<li>Open a new tab and open this <a class="link" href="https://github.com/siddhant385/flask-phishing/blob/main/main.py"  target="_blank" rel="noopener"
+    >url</a> on your new tab and click copy button as shown in the picture
+Url is : <a class="link" href="https://github.com/siddhant385/flask-phishing/blob/main/main.py"  target="_blank" rel="noopener"
+    >https://github.com/siddhant385/flask-phishing/blob/main/main.py</a></li>
+</ol>
+<div style="text-align: center;">
+  <img src="9.png" alt="9.png" width="800"/>
+</div>
+<ol start="13">
+<li>After you have copied the code remove all the previous code written in the main.py and paste copied code there and click on save button</li>
+</ol>
+<div style="text-align: center;">
+  <img src="10.png" alt="10.png" width="800"/>
+</div>
+14. Reload Your Site: Click on 'Reload' on the PythonAnywhere dashboard.
+<div style="text-align: center;">
+  <img src="11.png" alt="11.png" width="800"/>
+</div>
+15. Access Your Site: Go to yourusername.pythonanywhere.com. Use default credentials **admin** and **root** to log in, then change them immediately.
+<div style="text-align: center;">
+  <img src="12.png" alt="12.png" width="800"/>
+</div>
+- You will be redirected to a new page click on config tab and change your username and password. Hence you are good to go
+<h3 id="congrats-">Congrats! 🎉
+</h3><p>You have successfully hosted your phishing site!</p>
+<h2 id="aftermath">Aftermath🎭
+</h2><ul>
+<li>Create a Telegram Bot: Send usernames and passwords directly to your Telegram bot.</li>
+<li>Send Links: Share links to teach others about phishing.</li>
+<li>View Trapped Data: Check the DATA tab for captured info.</li>
+<li>Contribute: Help improve the tool.</li>
+<li>Star the Repo: Show your support for the author! 🌟</li>
+</ul>
+<h2 id="prevention-tips-">Prevention Tips 🚨
+</h2><ul>
+<li>Avoid unexpected links or attachments.</li>
+<li>Hover over links to check URLs.</li>
+<li>Enable 2FA for extra security.</li>
+<li>Keep your system, browser, and antivirus updated</li>
+</ul>
+<h2 id="conclusion">Conclusion
+</h2><p>So, there you have it, the lowdown on phishing. It&rsquo;s like those annoying telemarketers but way sneakier. Be smart, stay alert, and don&rsquo;t click on everything you see. If it sounds too good to be true, it probably is. When in doubt, ask a friend, parent, or teacher.</p>
+<p>Remember, your online life is like your room: keep the doors locked and don&rsquo;t let just anyone in. 🛡️</p>
+<p>Write your thoughts in the comments below!</p>
+<p>Thank you for visiting my blog! I hope you find my posts interesting and informative. Feel free to connect with me on GitHub, Instagram, or via email. Your feedback and suggestions are always welcome. Stay tuned for more updates!</p>
+<div style="display: flex; gap: 10px;">
+<a href="https://www.github.com/siddhant385" target="_blank">
+  <img src="https://upload.wikimedia.org/wikipedia/commons/9/91/Octicons-mark-github.svg" alt="GitHub" width="30" height="30">
+</a>
+<a href="https://www.instagram.com/s.i.d385" target="_blank">
+  <img src="https://upload.wikimedia.org/wikipedia/commons/a/a5/Instagram_icon.png" alt="Instagram" width="30" height="30">
+</a>
+<a href="mailto:your-email@example.com">
+  <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/4e/Mail_%28iOS%29.svg/640px-Mail_%28iOS%29.svg.png" alt="Email" width="30" height="30">
+</a>
+<a href="https://some.tm.me" target="_blank">
+  <img src="https://upload.wikimedia.org/wikipedia/commons/8/82/Telegram_logo.svg" alt="Telegram" width="30" height="30">
+</a>
+</div>
+```
+
+</section>
+
+
+    <footer class="article-footer">
+    
+    <section class="article-tags">
+        
+            <a href="/blog/tags/phishing/">Phishing</a>
+        
+            <a href="/blog/tags/cyber/">Cyber</a>
+        
+    </section>
+
+
+    
+    <section class="article-copyright">
+        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-copyright" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="12" cy="12" r="9" />
+  <path d="M14.5 9a3.5 4 0 1 0 0 6" />
+</svg>
+
+
+
+        <span>Licensed under CC BY-NC-SA 4.0</span>
+    </section>
+    </footer>
+
+
+    
+</article>
+
+    
+
+    
+
+     
+    
+        
+    <link rel="stylesheet" href="/blog/scss/partials/comments/disqusjs.min.css">
+
+<div class="disqus-container">
+    <div id="disqus_thread"></div>
+    <script type="application/javascript">
+        let disqusjs;
+        function loadDisqusJS() {
+            disqusjs = new DisqusJS({
+                shortname: "siddhantblog",
+                siteName: "Siddhant Sharma's Blog",
+                apikey: "y3Oy9ASAyDAVpcu8ChZA11Mz3JwRAAsGQszELWoh12wVhLCJL9gJgRrdORzGSqo8",
+                api: "https://disqus.com/api/oauth/2.0/authorize/",
+                admin: "https://siddhantblog.disqus.com/admin/",
+                
+            });
+        }
+
+        function lazyLoadDisqusJS() {
+            if (["localhost", "127.0.0.1"].indexOf(window.location.hostname) != -1) {
+                document.getElementById('disqus_thread').innerHTML = 'Disqus comments not available by default when the website is previewed locally.';
+                return;
+            }
+
+            let d = document.createElement('script');
+            d.src = 'https://cdn.jsdelivr.net/npm/disqusjs@1.3/dist/disqus.js';
+            d.async = false;
+            document.body.appendChild(d);
+            d.onload = () => {
+                loadDisqusJS();
+                window.addEventListener('onColorSchemeChange', (e) => {
+                    if (disqusjs) {
+                        loadDisqusJS();
+                    }
+                })
+            }
+        }
+
+        let runningOnBrowser = typeof window !== "undefined";
+        let isBot = runningOnBrowser && !("onscroll" in window) || typeof navigator !== "undefined" && /(gle|ing|ro|msn)bot|crawl|spider|yand|duckgo/i.test(navigator.userAgent);
+        let supportsIntersectionObserver = runningOnBrowser && "IntersectionObserver" in window;
+
+        if (!isBot && supportsIntersectionObserver) {
+            let disqus_observer = new IntersectionObserver(function(entries) {
+                if (entries[0].isIntersecting) {
+                    lazyLoadDisqusJS();
+                    disqus_observer.disconnect();
+                }
+            });
+            disqus_observer.observe(document.getElementById('disqus_thread'));
+        } else {
+            lazyLoadDisqusJS();
+        }
+    </script>
+    <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+</div>
+
+    
+
+    <footer class="site-footer">
+    <section class="copyright">
+        &copy; 
+        
+            2020 - 
+        
+        2024 siddhant385
+    </section>
+    
+    <section class="powerby">
+        Built with <a href="https://gohugo.io/" target="_blank" rel="noopener">Hugo</a> <br />
+        Theme <b><a href="https://github.com/CaiJimmy/hugo-theme-stack" target="_blank" rel="noopener" data-version="3.26.0">Stack</a></b> designed by <a href="https://jimmycai.com" target="_blank" rel="noopener">Jimmy</a>
+    </section>
+</footer>
+
+
+    
+<div class="pswp" tabindex="-1" role="dialog" aria-hidden="true">
+
+    
+    <div class="pswp__bg"></div>
+
+    
+    <div class="pswp__scroll-wrap">
+
+        
+        <div class="pswp__container">
+            <div class="pswp__item"></div>
+            <div class="pswp__item"></div>
+            <div class="pswp__item"></div>
+        </div>
+
+        
+        <div class="pswp__ui pswp__ui--hidden">
+
+            <div class="pswp__top-bar">
+
+                
+
+                <div class="pswp__counter"></div>
+
+                <button class="pswp__button pswp__button--close" title="Close (Esc)"></button>
+
+                <button class="pswp__button pswp__button--share" title="Share"></button>
+
+                <button class="pswp__button pswp__button--fs" title="Toggle fullscreen"></button>
+
+                <button class="pswp__button pswp__button--zoom" title="Zoom in/out"></button>
+
+                
+                
+                <div class="pswp__preloader">
+                    <div class="pswp__preloader__icn">
+                        <div class="pswp__preloader__cut">
+                            <div class="pswp__preloader__donut"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap">
+                <div class="pswp__share-tooltip"></div>
+            </div>
+
+            <button class="pswp__button pswp__button--arrow--left" title="Previous (arrow left)">
+            </button>
+
+            <button class="pswp__button pswp__button--arrow--right" title="Next (arrow right)">
+            </button>
+
+            <div class="pswp__caption">
+                <div class="pswp__caption__center"></div>
+            </div>
+
+        </div>
+
+    </div>
+
+</div><script 
+                src="https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/photoswipe.min.js"integrity="sha256-ePwmChbbvXbsO02lbM3HoHbSHTHFAeChekF1xKJdleo="crossorigin="anonymous"
+                defer
+                >
+            </script><script 
+                src="https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/photoswipe-ui-default.min.js"integrity="sha256-UKkzOn/w1mBxRmLLGrSeyB4e1xbrp4xylgAWb3M42pU="crossorigin="anonymous"
+                defer
+                >
+            </script><link 
+                rel="stylesheet" 
+                href="https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/default-skin/default-skin.min.css"crossorigin="anonymous"
+            ><link 
+                rel="stylesheet" 
+                href="https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/photoswipe.min.css"crossorigin="anonymous"
+            >
+
+            </main>
+        </div>
+        <script 
+                src="https://cdn.jsdelivr.net/npm/node-vibrant@3.1.6/dist/vibrant.min.js"integrity="sha256-awcR2jno4kI5X0zL8ex0vi2z&#43;KMkF24hUW8WePSA9HM="crossorigin="anonymous"
+                
+                >
+            </script><script type="text/javascript" src="/blog/ts/main.js" defer></script>
+<script>
+    (function () {
+        const customFont = document.createElement('link');
+        customFont.href = "https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap";
+
+        customFont.type = "text/css";
+        customFont.rel = "stylesheet";
+
+        document.head.appendChild(customFont);
+    }());
+</script>
+
+    </body>
+</html>

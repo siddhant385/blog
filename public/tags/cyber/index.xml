@@ -1,0 +1,197 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+    <channel>
+        <title>Cyber on Siddhant Sharma&#39;s Blog</title>
+        <link>http://localhost:1313/blog/tags/cyber/</link>
+        <description>Recent content in Cyber on Siddhant Sharma&#39;s Blog</description>
+        <generator>Hugo -- gohugo.io</generator>
+        <language>en</language>
+        <copyright>siddhant385</copyright>
+        <lastBuildDate>Thu, 25 Jul 2024 00:00:00 +0000</lastBuildDate><atom:link href="http://localhost:1313/blog/tags/cyber/index.xml" rel="self" type="application/rss+xml" /><item>
+        <title>Flask-Phishing</title>
+        <link>http://localhost:1313/blog/p/flask-phishing/</link>
+        <pubDate>Thu, 25 Jul 2024 00:00:00 +0000</pubDate>
+        
+        <guid>http://localhost:1313/blog/p/flask-phishing/</guid>
+        <description>&lt;img src="http://localhost:1313/blog/image.png" alt="Featured image of post Flask-Phishing" /&gt;&lt;h1 id=&#34;flask-phishing&#34;&gt;Flask-Phishing
+&lt;/h1&gt;&lt;h2 id=&#34;introduction&#34;&gt;Introduction
+&lt;/h2&gt;&lt;p&gt;Hey there, fellow tech adventurers! 🎉 Ready to dive into the sneaky world of phishing? Don&amp;rsquo;t worry; this is all in good fun and education. Today, we’re going to explore a Python Flask phishing framework. Grab your virtual trench coat and magnifying glass, and let’s go!&lt;/p&gt;
+&lt;h2 id=&#34;phishing-the-internets-dark-alley-&#34;&gt;Phishing: The Internet&amp;rsquo;s Dark Alley 🕵️‍♂️
+&lt;/h2&gt;&lt;blockquote&gt;
+&lt;p&gt;&amp;ldquo;Phishing is a major problem because there really is no patch for human stupidity.&amp;rdquo; - Mike Danseglio&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h3 id=&#34;what-on-earth-is-phishing-&#34;&gt;What on Earth is Phishing? 🤔
+&lt;/h3&gt;&lt;p&gt;Imagine getting an email from your favorite pizza place offering free pizza for a year. You click the link, and boom! Your personal info is stolen. Phishing is like that—bad guys pretending to be someone you trust to steal your information. Sneaky, huh?&lt;/p&gt;
+&lt;p&gt;Phishing is a sneaky trick where bad guys pretend to be someone you know online to steal your personal info. Imagine a wolf in sheep&amp;rsquo;s clothing, but the sheep is your favorite website. The site looks legit but is made to trick you. Always check twice before entering your info!&lt;/p&gt;
+&lt;h3 id=&#34;so-why-should-i-care-&#34;&gt;So, Why Should I Care? 🤷‍♀️
+&lt;/h3&gt;&lt;p&gt;Knowing about phishing is crucial because it shows just how easy it is to fall for these tricks. But here’s the twist: we’re going to use this knowledge for good. I’ll show you how to set up a phishing site (purely for educational purposes, of course).&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Disclaimer&lt;/strong&gt;: This tool is for ethical hackers only. If you&amp;rsquo;re not one of those, please go back to watching cat videos. 😸 We’re not responsible if you turn into a cyber villain. Use at your own risk, and remember, your mom was right about talking to strangers online. 🚫&lt;/p&gt;
+&lt;h3 id=&#34;what-makes-this-tool-special-&#34;&gt;What Makes This Tool Special? 🎉
+&lt;/h3&gt;&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Flask-Powered&lt;/strong&gt;: Deploy it on the web with ease.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;No Port Forwarding&lt;/strong&gt;: Forget the hassle of port forwarding or ngrok.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;User-Friendly&lt;/strong&gt;: Simple web interface that even your grandma could use (probably).&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Accessible&lt;/strong&gt;: Just need the internet and a web browser.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;installation-on-webhosting-&#34;&gt;Installation on Webhosting 🌐
+&lt;/h2&gt;&lt;ol&gt;
+&lt;li&gt;Requirements: Internet and a device (laptop recommended, but you can try your luck with a mobile phone).&lt;/li&gt;
+&lt;li&gt;Deployment Platform: We&amp;rsquo;ll use PythonAnywhere.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h2 id=&#34;step-by-step-guide-&#34;&gt;Step-by-Step Guide 🚀
+&lt;/h2&gt;&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;Create an Account: Sign up on PythonAnywhere. Yes, you know how to create an account. 🙄&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Dashboard Navigation: Head to the dashboard.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Open a New Console: Click on &amp;lsquo;New Console&amp;rsquo; and select &amp;lsquo;Bash&amp;rsquo;.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Clone the Repository: Enter &lt;code&gt;git clone https://github.com/siddhant385/flask-phishing&lt;/code&gt; in the console.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Navigate to Directory: Type &lt;code&gt;cd flask-phishing&lt;/code&gt; in the console&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Install Requirements: Run &lt;code&gt;pip install -r requirements.txt.&lt;/code&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Open Web Tab: Go back to the dashboard and click on &amp;lsquo;Web&amp;rsquo;.&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;div style=&#34;text-align: center;&#34;&gt;
+  &lt;img src=&#34;1.png&#34; alt=&#34;1.png&#34; width=&#34;800&#34;/&gt;
+&lt;/div&gt;
+&lt;ol start=&#34;8&#34;&gt;
+&lt;li&gt;Add New Web App: Click on &amp;lsquo;Add new web app&amp;rsquo; and select &amp;lsquo;Flask&amp;rsquo;&lt;/li&gt;
+&lt;/ol&gt;
+&lt;style&gt;
+  .image-gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+  }
+
+  .image-gallery img {
+    width: 100%;
+    border-radius: 8px;
+    opacity: 0; /* Start with images hidden */
+  }
+&lt;/style&gt;
+&lt;div class=&#34;image-gallery&#34;&gt;
+  &lt;div style=&#34;flex: 1; min-width: 200px; max-width: 300px;&#34;&gt;
+    &lt;img src=&#34;2.png&#34; alt=&#34;Step 2&#34; style=&#34;width: 100%; border-radius: 8px;&#34;/&gt;
+  &lt;/div&gt;
+  &lt;div style=&#34;flex: 1; min-width: 200px; max-width: 300px;&#34;&gt;
+    &lt;img src=&#34;3.png&#34; alt=&#34;Step 2&#34; style=&#34;width: 100%; border-radius: 8px;&#34;/&gt;
+  &lt;/div&gt;
+  &lt;div style=&#34;flex: 1; min-width: 200px; max-width: 300px;&#34;&gt;
+    &lt;img src=&#34;4.png&#34; alt=&#34;Step 3&#34; style=&#34;width: 100%; border-radius: 8px;&#34;/&gt;
+  &lt;/div&gt;
+  &lt;div style=&#34;flex: 1; min-width: 200px; max-width: 300px;&#34;&gt;
+    &lt;img src=&#34;5.png&#34; alt=&#34;Step 3&#34; style=&#34;width: 100%; border-radius: 8px;&#34;/&gt;
+  &lt;/div&gt;
+&lt;script&gt;
+  document.addEventListener(&#34;DOMContentLoaded&#34;, function() {
+    const images = document.querySelectorAll(&#39;.image-gallery img&#39;);
+    images.forEach((img, index) =&gt; {
+      img.style.opacity = 0;
+      img.style.transition = `opacity 0.5s ease ${index * 0.2}s`;
+      img.style.opacity = 1;
+    });
+  });
+&lt;/script&gt;
+  &lt;!-- Add more images as needed --&gt;
+&lt;/div&gt;
+ &lt;!-- 2.png --&gt;
+&lt;!-- 3.png --&gt;
+&lt;!-- 4.png --&gt;
+&lt;!-- 5.png --&gt;
+&lt;ol start=&#34;9&#34;&gt;
+&lt;li&gt;Configure Path: Enter the path to your main script, e.g., &lt;strong&gt;/home/yourusername/flask-phishing/main.py.&lt;/strong&gt;&lt;/li&gt;
+&lt;/ol&gt;
+&lt;div style=&#34;text-align: center;&#34;&gt;
+  &lt;img src=&#34;6.png&#34; alt=&#34;6.png&#34; width=&#34;800&#34;/&gt;
+&lt;/div&gt;
+&lt;ol start=&#34;10&#34;&gt;
+&lt;li&gt;After you have clicked next a web dashboard will be opened scroll down and then click go to directory of Source code as given in picture below&lt;/li&gt;
+&lt;/ol&gt;
+&lt;div style=&#34;text-align: center;&#34;&gt;
+  &lt;img src=&#34;7.png&#34; alt=&#34;7.png&#34; width=&#34;800&#34;/&gt;
+&lt;/div&gt;
+&lt;ol start=&#34;11&#34;&gt;
+&lt;li&gt;Now click on main.py&lt;/li&gt;
+&lt;/ol&gt;
+&lt;div style=&#34;text-align: center;&#34;&gt;
+  &lt;img src=&#34;8.png&#34; alt=&#34;8.png&#34; width=&#34;800&#34;/&gt;
+&lt;/div&gt;
+&lt;ol start=&#34;12&#34;&gt;
+&lt;li&gt;Open a new tab and open this &lt;a class=&#34;link&#34; href=&#34;https://github.com/siddhant385/flask-phishing/blob/main/main.py&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;url&lt;/a&gt; on your new tab and click copy button as shown in the picture
+Url is : &lt;a class=&#34;link&#34; href=&#34;https://github.com/siddhant385/flask-phishing/blob/main/main.py&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;https://github.com/siddhant385/flask-phishing/blob/main/main.py&lt;/a&gt;&lt;/li&gt;
+&lt;/ol&gt;
+&lt;div style=&#34;text-align: center;&#34;&gt;
+  &lt;img src=&#34;9.png&#34; alt=&#34;9.png&#34; width=&#34;800&#34;/&gt;
+&lt;/div&gt;
+&lt;ol start=&#34;13&#34;&gt;
+&lt;li&gt;After you have copied the code remove all the previous code written in the main.py and paste copied code there and click on save button&lt;/li&gt;
+&lt;/ol&gt;
+&lt;div style=&#34;text-align: center;&#34;&gt;
+  &lt;img src=&#34;10.png&#34; alt=&#34;10.png&#34; width=&#34;800&#34;/&gt;
+&lt;/div&gt;
+14. Reload Your Site: Click on &#39;Reload&#39; on the PythonAnywhere dashboard.
+&lt;div style=&#34;text-align: center;&#34;&gt;
+  &lt;img src=&#34;11.png&#34; alt=&#34;11.png&#34; width=&#34;800&#34;/&gt;
+&lt;/div&gt;
+15. Access Your Site: Go to yourusername.pythonanywhere.com. Use default credentials **admin** and **root** to log in, then change them immediately.
+&lt;div style=&#34;text-align: center;&#34;&gt;
+  &lt;img src=&#34;12.png&#34; alt=&#34;12.png&#34; width=&#34;800&#34;/&gt;
+&lt;/div&gt;
+- You will be redirected to a new page click on config tab and change your username and password. Hence you are good to go
+&lt;h3 id=&#34;congrats-&#34;&gt;Congrats! 🎉
+&lt;/h3&gt;&lt;p&gt;You have successfully hosted your phishing site!&lt;/p&gt;
+&lt;h2 id=&#34;aftermath&#34;&gt;Aftermath🎭
+&lt;/h2&gt;&lt;ul&gt;
+&lt;li&gt;Create a Telegram Bot: Send usernames and passwords directly to your Telegram bot.&lt;/li&gt;
+&lt;li&gt;Send Links: Share links to teach others about phishing.&lt;/li&gt;
+&lt;li&gt;View Trapped Data: Check the DATA tab for captured info.&lt;/li&gt;
+&lt;li&gt;Contribute: Help improve the tool.&lt;/li&gt;
+&lt;li&gt;Star the Repo: Show your support for the author! 🌟&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;prevention-tips-&#34;&gt;Prevention Tips 🚨
+&lt;/h2&gt;&lt;ul&gt;
+&lt;li&gt;Avoid unexpected links or attachments.&lt;/li&gt;
+&lt;li&gt;Hover over links to check URLs.&lt;/li&gt;
+&lt;li&gt;Enable 2FA for extra security.&lt;/li&gt;
+&lt;li&gt;Keep your system, browser, and antivirus updated&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;conclusion&#34;&gt;Conclusion
+&lt;/h2&gt;&lt;p&gt;So, there you have it, the lowdown on phishing. It&amp;rsquo;s like those annoying telemarketers but way sneakier. Be smart, stay alert, and don&amp;rsquo;t click on everything you see. If it sounds too good to be true, it probably is. When in doubt, ask a friend, parent, or teacher.&lt;/p&gt;
+&lt;p&gt;Remember, your online life is like your room: keep the doors locked and don&amp;rsquo;t let just anyone in. 🛡️&lt;/p&gt;
+&lt;p&gt;Write your thoughts in the comments below!&lt;/p&gt;
+&lt;p&gt;Thank you for visiting my blog! I hope you find my posts interesting and informative. Feel free to connect with me on GitHub, Instagram, or via email. Your feedback and suggestions are always welcome. Stay tuned for more updates!&lt;/p&gt;
+&lt;div style=&#34;display: flex; gap: 10px;&#34;&gt;
+&lt;a href=&#34;https://www.github.com/siddhant385&#34; target=&#34;_blank&#34;&gt;
+  &lt;img src=&#34;https://upload.wikimedia.org/wikipedia/commons/9/91/Octicons-mark-github.svg&#34; alt=&#34;GitHub&#34; width=&#34;30&#34; height=&#34;30&#34;&gt;
+&lt;/a&gt;
+&lt;a href=&#34;https://www.instagram.com/s.i.d385&#34; target=&#34;_blank&#34;&gt;
+  &lt;img src=&#34;https://upload.wikimedia.org/wikipedia/commons/a/a5/Instagram_icon.png&#34; alt=&#34;Instagram&#34; width=&#34;30&#34; height=&#34;30&#34;&gt;
+&lt;/a&gt;
+&lt;a href=&#34;mailto:your-email@example.com&#34;&gt;
+  &lt;img src=&#34;https://upload.wikimedia.org/wikipedia/commons/thumb/4/4e/Mail_%28iOS%29.svg/640px-Mail_%28iOS%29.svg.png&#34; alt=&#34;Email&#34; width=&#34;30&#34; height=&#34;30&#34;&gt;
+&lt;/a&gt;
+&lt;a href=&#34;https://some.tm.me&#34; target=&#34;_blank&#34;&gt;
+  &lt;img src=&#34;https://upload.wikimedia.org/wikipedia/commons/8/82/Telegram_logo.svg&#34; alt=&#34;Telegram&#34; width=&#34;30&#34; height=&#34;30&#34;&gt;
+&lt;/a&gt;
+&lt;/div&gt;
+```
+</description>
+        </item>
+        
+    </channel>
+</rss>
