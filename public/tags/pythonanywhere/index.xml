@@ -41,32 +41,32 @@
 &lt;h2 id=&#34;step-by-step-guide-&#34;&gt;Step-by-Step Guide 🚀
 &lt;/h2&gt;&lt;ol&gt;
 &lt;li&gt;
-&lt;p&gt;Create an Account: Sign up on PythonAnywhere. Yes, you know how to create an account. 🙄&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Create an Account&lt;/strong&gt;: Sign up on PythonAnywhere. Yes, you know how to create an account. 🙄&lt;/p&gt;
 &lt;/li&gt;
 &lt;li&gt;
-&lt;p&gt;Dashboard Navigation: Head to the dashboard.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Dashboard Navigation&lt;/strong&gt;: Head to the dashboard.&lt;/p&gt;
 &lt;/li&gt;
 &lt;li&gt;
-&lt;p&gt;Open a New Console: Click on &amp;lsquo;New Console&amp;rsquo; and select &amp;lsquo;Bash&amp;rsquo;.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Open a New Console&lt;/strong&gt;: Click on &amp;lsquo;New Console&amp;rsquo; and select &amp;lsquo;Bash&amp;rsquo;.&lt;/p&gt;
 &lt;/li&gt;
 &lt;li&gt;
-&lt;p&gt;Clone the Repository: Enter &lt;code&gt;git clone https://github.com/siddhant385/flask-phishing&lt;/code&gt; in the console.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Clone the Repository&lt;/strong&gt;: Enter &lt;code&gt;git clone https://github.com/siddhant385/flask-phishing&lt;/code&gt; in the console.&lt;/p&gt;
 &lt;/li&gt;
 &lt;li&gt;
-&lt;p&gt;Navigate to Directory: Type &lt;code&gt;cd flask-phishing&lt;/code&gt; in the console&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Navigate to Directory&lt;/strong&gt;: Type &lt;code&gt;cd flask-phishing&lt;/code&gt; in the console&lt;/p&gt;
 &lt;/li&gt;
 &lt;li&gt;
-&lt;p&gt;Install Requirements: Run &lt;code&gt;pip install -r requirements.txt.&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Install Requirements&lt;/strong&gt;: Run &lt;code&gt;pip install -r requirements.txt.&lt;/code&gt;&lt;/p&gt;
 &lt;/li&gt;
 &lt;li&gt;
-&lt;p&gt;Open Web Tab: Go back to the dashboard and click on &amp;lsquo;Web&amp;rsquo;.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Open Web Tab&lt;/strong&gt;: Go back to the dashboard and click on &amp;lsquo;Web&amp;rsquo;.&lt;/p&gt;
 &lt;/li&gt;
 &lt;/ol&gt;
 &lt;div style=&#34;text-align: center;&#34;&gt;
   &lt;img src=&#34;1.png&#34; alt=&#34;1.png&#34; width=&#34;800&#34;/&gt;
 &lt;/div&gt;
 &lt;ol start=&#34;8&#34;&gt;
-&lt;li&gt;Add New Web App: Click on &amp;lsquo;Add new web app&amp;rsquo; and select &amp;lsquo;Flask&amp;rsquo;&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Add New Web App&lt;/strong&gt;: Click on &amp;lsquo;Add new web app&amp;rsquo; and select &amp;lsquo;Flask&amp;rsquo;&lt;/li&gt;
 &lt;/ol&gt;
 &lt;div style=&#34;text-align: center;&#34;&gt;
   &lt;img src=&#34;2.png&#34; alt=&#34;1.png&#34; width=&#34;800&#34;/&gt;
@@ -95,7 +95,7 @@
 &lt;!-- 4.png --&gt;
 &lt;!-- 5.png --&gt;
 &lt;ol start=&#34;9&#34;&gt;
-&lt;li&gt;Configure Path: Enter the path to your main script, e.g., &lt;strong&gt;/home/yourusername/flask-phishing/main.py.&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Configure Path&lt;/strong&gt;: Enter the path to your main script, e.g., &lt;strong&gt;/home/yourusername/flask-phishing/main.py.&lt;/strong&gt;&lt;/li&gt;
 &lt;/ol&gt;
 &lt;div style=&#34;text-align: center;&#34;&gt;
   &lt;img src=&#34;6.png&#34; alt=&#34;6.png&#34; width=&#34;800&#34;/&gt;
@@ -127,11 +127,15 @@ Url is : &lt;a class=&#34;link&#34; href=&#34;https://github.com/siddhant385/fla
 &lt;div style=&#34;text-align: center;&#34;&gt;
   &lt;img src=&#34;10.png&#34; alt=&#34;10.png&#34; width=&#34;800&#34;/&gt;
 &lt;/div&gt;
-14. Reload Your Site: Click on &#39;Reload&#39; on the PythonAnywhere dashboard.
+&lt;ol start=&#34;14&#34;&gt;
+&lt;li&gt;&lt;strong&gt;Reload Your Site&lt;/strong&gt;: Click on &amp;lsquo;Reload&amp;rsquo; on the PythonAnywhere dashboard.&lt;/li&gt;
+&lt;/ol&gt;
 &lt;div style=&#34;text-align: center;&#34;&gt;
   &lt;img src=&#34;11.png&#34; alt=&#34;11.png&#34; width=&#34;800&#34;/&gt;
 &lt;/div&gt;
-15. Access Your Site: Go to yourusername.pythonanywhere.com. Use default credentials **admin** and **root** to log in, then change them immediately.
+&lt;ol start=&#34;15&#34;&gt;
+&lt;li&gt;&lt;strong&gt;Access Your Site&lt;/strong&gt;: Go to yourusername.pythonanywhere.com. Use default credentials &lt;strong&gt;admin&lt;/strong&gt; and &lt;strong&gt;root&lt;/strong&gt; to log in, then change them immediately.&lt;/li&gt;
+&lt;/ol&gt;
 &lt;div style=&#34;text-align: center;&#34;&gt;
   &lt;img src=&#34;12.png&#34; alt=&#34;12.png&#34; width=&#34;800&#34;/&gt;
 &lt;/div&gt;
