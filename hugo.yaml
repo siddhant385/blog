@@ -67,7 +67,7 @@ params:
 
     comments:
         enabled: true
-        provider: disqusjs
+        provider: cusdis
         
         disqusjs:
             shortname: siddhantblog
