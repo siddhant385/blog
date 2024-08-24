@@ -77,7 +77,7 @@
                     
                     
                         
-                        <img src="/blog/img/profile_hu5d3bd7439a144824d4c0d9011f71e35c_515866_300x0_resize_q75_box.jpg" width="300"
+                        <img src="/blog/img/profile_hu13187808360619626927.jpg" width="300"
                             height="382" class="site-logo" loading="lazy" alt="Avatar">
                     
                 
@@ -307,8 +307,8 @@
     <header class="article-header">
         <div class="article-image">
             <a href="/blog/p/my-first-blog/">
-                <img src="/blog/p/my-first-blog/image_hu193cc2a3f981af09d6a3dbbbd9185ec9_573697_800x0_resize_box_3.png"
-                        srcset="/blog/p/my-first-blog/image_hu193cc2a3f981af09d6a3dbbbd9185ec9_573697_800x0_resize_box_3.png 800w, /blog/p/my-first-blog/image_hu193cc2a3f981af09d6a3dbbbd9185ec9_573697_1600x0_resize_box_3.png 1600w"
+                <img src="/blog/p/my-first-blog/image_hu17743010827374267183.png"
+                        srcset="/blog/p/my-first-blog/image_hu17743010827374267183.png 800w, /blog/p/my-first-blog/image_hu3311302027968187186.png 1600w"
                         width="800" 
                         height="566" 
                         loading="lazy"
@@ -472,64 +472,87 @@
 
     
 
+<aside class="related-content--wrapper">
+    <h2 class="section-title">Related content</h2>
+    <div class="related-content">
+        <div class="flex article-list--tile">
+            
+                
+<article class="has-image">
+    <a href="/blog/p/my-kota-journey-experiences-insights-and-stories-from-kota/">
+        
+        
+            <div class="article-image">
+                <img src="/blog/p/my-kota-journey-experiences-insights-and-stories-from-kota/mainimage.445201759448d7489805e114846405ef_hu8108362963607143149.webp" 
+                        width="250" 
+                        height="150" 
+                        loading="lazy"
+                        alt="Featured image of post My Kota Journey: Experiences, Insights, and Stories from Kota"
+                        
+                        data-hash="md5-RFIBdZRI10iYBeEUhGQF7w==">
+                
+            </div>
+        
+
+        <div class="article-details">
+            <h2 class="article-title">My Kota Journey: Experiences, Insights, and Stories from Kota</h2>
+        </div>
+    </a>
+</article>
+
+            
+                
+<article class="has-image">
+    <a href="/blog/p/my-kota-journey-experiences-insights-and-stories-from-kota/">
+        
+        
+            <div class="article-image">
+                <img src="/blog/p/my-kota-journey-experiences-insights-and-stories-from-kota/mainimage.445201759448d7489805e114846405ef_hu8108362963607143149.webp" 
+                        width="250" 
+                        height="150" 
+                        loading="lazy"
+                        alt="Featured image of post My Kota Journey: Experiences, Insights, and Stories from Kota"
+                        
+                        data-hash="md5-RFIBdZRI10iYBeEUhGQF7w==">
+                
+            </div>
+        
+
+        <div class="article-details">
+            <h2 class="article-title">My Kota Journey: Experiences, Insights, and Stories from Kota</h2>
+        </div>
+    </a>
+</article>
+
+            
+        </div>
+    </div>
+</aside>
+
      
     
         
-    <link rel="stylesheet" href="/blog/scss/partials/comments/disqusjs.min.css">
+    <div id="cusdis_thread"
+    data-host="https://cusdis.com"
+    data-app-id="c7f1f9bd-eadc-4898-bd9b-b774b4d30249"
+    data-page-id="a9060083e5f1eb7f6309e2242e5258b8"
+    data-page-url="http://localhost:1313/blog/p/my-first-blog/"
+    data-page-title="My First Blog"></div>
+<script async defer src="https://cusdis.com/js/cusdis.es.js"></script>
 
-<div class="disqus-container">
-    <div id="disqus_thread"></div>
-    <script type="application/javascript">
-        let disqusjs;
-        function loadDisqusJS() {
-            disqusjs = new DisqusJS({
-                shortname: "siddhantblog",
-                siteName: "Siddhant Sharma's Blog",
-                apikey: "y3Oy9ASAyDAVpcu8ChZA11Mz3JwRAAsGQszELWoh12wVhLCJL9gJgRrdORzGSqo8",
-                api: "https://disqus.com/api/oauth/2.0/authorize/",
-                admin: "https://siddhantblog.disqus.com/admin/",
-                
-            });
+<script>
+    function setCusdisTheme(theme) {
+        let cusdis = document.querySelector('#cusdis_thread iframe');
+        if (cusdis) {
+            window.CUSDIS.setTheme(theme)
         }
+    }
 
-        function lazyLoadDisqusJS() {
-            if (["localhost", "127.0.0.1"].indexOf(window.location.hostname) != -1) {
-                document.getElementById('disqus_thread').innerHTML = 'Disqus comments not available by default when the website is previewed locally.';
-                return;
-            }
+    window.addEventListener('onColorSchemeChange', (e) => {
+        setCusdisTheme(e.detail)
+    })
+</script>
 
-            let d = document.createElement('script');
-            d.src = 'https://cdn.jsdelivr.net/npm/disqusjs@1.3/dist/disqus.js';
-            d.async = false;
-            document.body.appendChild(d);
-            d.onload = () => {
-                loadDisqusJS();
-                window.addEventListener('onColorSchemeChange', (e) => {
-                    if (disqusjs) {
-                        loadDisqusJS();
-                    }
-                })
-            }
-        }
-
-        let runningOnBrowser = typeof window !== "undefined";
-        let isBot = runningOnBrowser && !("onscroll" in window) || typeof navigator !== "undefined" && /(gle|ing|ro|msn)bot|crawl|spider|yand|duckgo/i.test(navigator.userAgent);
-        let supportsIntersectionObserver = runningOnBrowser && "IntersectionObserver" in window;
-
-        if (!isBot && supportsIntersectionObserver) {
-            let disqus_observer = new IntersectionObserver(function(entries) {
-                if (entries[0].isIntersecting) {
-                    lazyLoadDisqusJS();
-                    disqus_observer.disconnect();
-                }
-            });
-            disqus_observer.observe(document.getElementById('disqus_thread'));
-        } else {
-            lazyLoadDisqusJS();
-        }
-    </script>
-    <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
-</div>
 
     
 
