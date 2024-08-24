@@ -62,7 +62,7 @@ image = "main.webp"
 
 ## About
 
-This series comprises my story and experiences in Kota. This is the first part of the story.
+This series comprises my story and experiences in Kota. This is the second part of the story.
 
 ## Introduction
 
