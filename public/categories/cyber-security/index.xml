@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+    <channel>
+        <title>Cyber Security on Siddhant Sharma&#39;s Blog</title>
+        <link>http://localhost:1313/blog/categories/cyber-security/</link>
+        <description>Recent content in Cyber Security on Siddhant Sharma&#39;s Blog</description>
+        <generator>Hugo -- gohugo.io</generator>
+        <language>en</language>
+        <copyright>siddhant385</copyright>
+        <lastBuildDate>Sat, 14 Sep 2024 00:00:00 +0000</lastBuildDate><atom:link href="http://localhost:1313/blog/categories/cyber-security/index.xml" rel="self" type="application/rss+xml" /><item>
+        <title>Pyhackthon</title>
+        <link>http://localhost:1313/blog/p/pyhackthon/</link>
+        <pubDate>Sat, 14 Sep 2024 00:00:00 +0000</pubDate>
+        
+        <guid>http://localhost:1313/blog/p/pyhackthon/</guid>
+        <description>&lt;img src="http://localhost:1313/blog/p/pyhackthon/image.jpg" alt="Featured image of post Pyhackthon" /&gt;&lt;h1 id=&#34;pyhackthon-&#34;&gt;Pyhackthon 🐍🖥️
+&lt;/h1&gt;&lt;h2 id=&#34;introduction&#34;&gt;Introduction
+&lt;/h2&gt;&lt;p&gt;👋 Hey Tech Enthusiasts and Cyber World Lovers!&lt;/p&gt;
+&lt;p&gt;Have you ever wondered how easy it is to evade antivirus software and code a fully functional malware tool? In today&amp;rsquo;s blog, we&amp;rsquo;ll dive deep into the world of Python and how &lt;strong&gt;script kiddies&lt;/strong&gt; (those pesky noobs 😅) use it to develop harmful tools.&lt;/p&gt;
+&lt;p&gt;More importantly, you&amp;rsquo;ll learn how to build one yourself (for educational purposes, of course!) and &lt;strong&gt;how to defend yourself against them&lt;/strong&gt;. ⚔️&lt;/p&gt;
+&lt;h2 id=&#34;pyhackthon-welcome-to-the-dark-side-of-python-&#34;&gt;Pyhackthon: Welcome to the Dark Side of Python 🌑
+&lt;/h2&gt;&lt;p&gt;Python is a versatile, high-level programming language that is:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Easy to Learn 💡&lt;/li&gt;
+&lt;li&gt;Easy to Code 🛠️&lt;/li&gt;
+&lt;li&gt;Full of Powerful Libraries 📚&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;However, its flexibility has made it a favorite for &lt;strong&gt;cybercriminals&lt;/strong&gt; too. They often misuse Python for creating malware that can harm systems. &lt;strong&gt;Today&lt;/strong&gt;, we&amp;rsquo;re going to look into how a simple Python script can turn into a full-fledged &lt;strong&gt;Remote Access Trojan (RAT)&lt;/strong&gt;, and how you can protect yourself from such attacks.&lt;/p&gt;
+&lt;hr&gt;
+&lt;h2 id=&#34;rat-the-dangerous-mouse-&#34;&gt;RAT: The Dangerous Mouse 🐭💻
+&lt;/h2&gt;&lt;p&gt;No, not that kind of rat! 🐀 In computer terms, &lt;strong&gt;RAT&lt;/strong&gt; stands for &lt;strong&gt;Remote Access Trojan&lt;/strong&gt;.&lt;/p&gt;
+&lt;p&gt;Imagine receiving a harmless-looking email attachment, and when you open it, someone gains &lt;strong&gt;complete control of your computer&lt;/strong&gt; without your consent! 😱 Scary, right?&lt;/p&gt;
+&lt;p&gt;A RAT is like a fox disguised as Grandma 👵 (Trojan) but sneakier—giving attackers remote access to your system to steal data, monitor your activity, and even control your files.&lt;/p&gt;
+&lt;h3 id=&#34;disclaimer-&#34;&gt;&lt;strong&gt;Disclaimer&lt;/strong&gt; 🛑:
+&lt;/h3&gt;&lt;p&gt;Misusing this tool can land you in legal trouble—think late-night knock on the door kinda trouble 🚔. So, make sure you&amp;rsquo;re using it responsibly and ethically.&lt;/p&gt;
+&lt;hr&gt;
+&lt;h2 id=&#34;what-makes-this-tool-special-&#34;&gt;What Makes This Tool Special? 🎉
+&lt;/h2&gt;&lt;ol&gt;
+&lt;li&gt;&lt;strong&gt;Easy Setup&lt;/strong&gt; - Get it running in minutes ⏲️&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;No Port Forwarding Required&lt;/strong&gt; - A hassle-free experience 🌐&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Accessible&lt;/strong&gt; - All you need is an internet connection and a browser 🌍&lt;/li&gt;
+&lt;/ol&gt;
+&lt;hr&gt;
+&lt;h3 id=&#34;-setup-and-installation-&#34;&gt;🛠️ Setup and Installation 🛠️
+&lt;/h3&gt;&lt;p&gt;Follow these simple steps:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;🍴 &lt;strong&gt;Clone This Repository&lt;/strong&gt;: Fork it, clone it, just get it!&lt;/li&gt;
+&lt;li&gt;📦 &lt;strong&gt;Install Requirements&lt;/strong&gt;: Run the following command:&lt;/li&gt;
+&lt;/ol&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;pip install -r requirements.txt
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;div class=&#34;photo-container&#34; style=&#34;width: 80%; max-width: 600px; margin: 20px auto; border: 2px solid #ddd; border-radius: 10px; overflow: hidden; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);&#34;&gt;
+  &lt;img src=&#34;resources/require.png&#34; alt=&#34;Room.jpg&#34; style=&#34;width: 100%; height: auto;&#34;&gt;
+  &lt;p class=&#34;photo-caption&#34; style=&#34;padding: 10px; font-style: italic; color:red; text-align: center; background-color: #f9f9f9;&#34;&gt;Requirements command&lt;/p&gt;
+&lt;/div&gt;
+&lt;ol start=&#34;3&#34;&gt;
+&lt;li&gt;✉️ &lt;strong&gt;Create a New Gmail Account&lt;/strong&gt;: &lt;strong&gt;DO NOT&lt;/strong&gt; use your personal account for this! Enter the credentials into &lt;code&gt;gmail.py&lt;/code&gt;.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;div class=&#34;photo-container&#34; style=&#34;width: 80%; max-width: 600px; margin: 20px auto; border: 2px solid #ddd; border-radius: 10px; overflow: hidden; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);&#34;&gt;
+  &lt;img src=&#34;resources/creds.png&#34; alt=&#34;Room.jpg&#34; style=&#34;width: 100%; height: auto;&#34;&gt;
+  &lt;p class=&#34;photo-caption&#34; style=&#34;padding: 10px; font-style: italic; color:red; text-align: center; background-color: #f9f9f9;&#34;&gt;Write Creds&lt;/p&gt;
+&lt;/div&gt;
+&lt;ol start=&#34;4&#34;&gt;
+&lt;li&gt;
+&lt;p&gt;🔓 &lt;strong&gt;Enable Less Secure Apps&lt;/strong&gt;: Because we like living dangerously 😎.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;📧 &lt;strong&gt;Configure Email&lt;/strong&gt;: For receiving results and sending commands to &lt;code&gt;YOUR_MAIL&lt;/code&gt;.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;🖥️ &lt;strong&gt;Convert to Executable&lt;/strong&gt;: Use &lt;code&gt;PyInstaller&lt;/code&gt;:&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;pyinstaller --onefile --noconsole gmail.py
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;div class=&#34;photo-container&#34; style=&#34;width: 80%; max-width: 600px; margin: 20px auto; border: 2px solid #ddd; border-radius: 10px; overflow: hidden; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);&#34;&gt;
+  &lt;img src=&#34;resources/pyinstaller.png&#34; alt=&#34;Room.jpg&#34; style=&#34;width: 100%; height: auto;&#34;&gt;
+  &lt;p class=&#34;photo-caption&#34; style=&#34;padding: 10px; font-style: italic; color:red; text-align: center; background-color: #f9f9f9;&#34;&gt;Pyinstaller Command&lt;/p&gt;
+&lt;/div&gt;
+&lt;ol start=&#34;7&#34;&gt;
+&lt;li&gt;💻 &lt;strong&gt;Install on the Target Machine&lt;/strong&gt;: &lt;em&gt;Insert evil laugh here&lt;/em&gt; 😈.&lt;/li&gt;
+&lt;li&gt;⏳ &lt;strong&gt;Wait 2 Minutes&lt;/strong&gt;: Check your email for results.&lt;/li&gt;
+&lt;li&gt;🔧 &lt;strong&gt;Send Commands via Email&lt;/strong&gt;: Flex those hacking muscles 💪.&lt;/li&gt;
+&lt;li&gt;🏁 &lt;strong&gt;Exit Command&lt;/strong&gt;: Send the command &lt;code&gt;EXIT&lt;/code&gt; to stop the tool.&lt;/li&gt;
+&lt;li&gt;🎉 &lt;strong&gt;Congratulations!&lt;/strong&gt; You&amp;rsquo;ve created your first Python RAT.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;hr&gt;
+&lt;h2 id=&#34;aftermath-&#34;&gt;Aftermath 🎭
+&lt;/h2&gt;&lt;p&gt;Once you&amp;rsquo;ve run the RAT, here’s what you can do:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;🖥️ &lt;strong&gt;Run Some Commands&lt;/strong&gt;.&lt;/li&gt;
+&lt;li&gt;🧠 &lt;strong&gt;Teach Others&lt;/strong&gt; about cybersecurity risks.&lt;/li&gt;
+&lt;li&gt;💪 &lt;strong&gt;Contribute&lt;/strong&gt; to improving this tool by adding features.&lt;/li&gt;
+&lt;li&gt;🌟 &lt;strong&gt;Star the Repo&lt;/strong&gt; to show your support!&lt;/li&gt;
+&lt;/ul&gt;
+&lt;hr&gt;
+&lt;h2 id=&#34;prevention-tips-&#34;&gt;Prevention Tips 🚨
+&lt;/h2&gt;&lt;p&gt;Now that you know how dangerous RATs can be, here’s how to &lt;strong&gt;protect yourself&lt;/strong&gt;:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Avoid clicking on suspicious links or opening unexpected attachments 🚫.&lt;/li&gt;
+&lt;li&gt;Hover over links before clicking to see where they really lead 🔍.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Always use antivirus software&lt;/strong&gt;.&lt;/li&gt;
+&lt;li&gt;Keep your system, browser, and antivirus up-to-date 🔄.&lt;/li&gt;
+&lt;li&gt;Never download software from untrusted or pirated sources ❌.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;hr&gt;
+&lt;h2 id=&#34;conclusion-&#34;&gt;Conclusion 🎯
+&lt;/h2&gt;&lt;p&gt;So there you have it—the sneaky world of &lt;strong&gt;Remote Access Trojans&lt;/strong&gt;. Always be cautious of what you click online. If something seems too good to be true, it probably is. When in doubt, ask a cyber professional.&lt;/p&gt;
+&lt;p&gt;Remember: just like your room, keep your online space locked and safe. 🛡️&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Share your thoughts in the comments below&lt;/strong&gt; and feel free to connect with me on GitHub, Instagram, or Telegram for more cool content!&lt;/p&gt;
+&lt;p&gt;Thank you for visiting my blog! 😁&lt;/p&gt;
+&lt;hr&gt;
+&lt;div style=&#34;display: flex; gap: 10px;&#34;&gt;
+&lt;a href=&#34;https://www.github.com/siddhant385&#34; target=&#34;_blank&#34;&gt;
+  &lt;img src=&#34;https://upload.wikimedia.org/wikipedia/commons/9/91/Octicons-mark-github.svg&#34; alt=&#34;GitHub&#34; width=&#34;30&#34; height=&#34;30&#34;&gt;
+&lt;/a&gt;
+&lt;a href=&#34;https://www.instagram.com/s.i.d385&#34; target=&#34;_blank&#34;&gt;
+  &lt;img src=&#34;https://upload.wikimedia.org/wikipedia/commons/a/a5/Instagram_icon.png&#34; alt=&#34;Instagram&#34; width=&#34;30&#34; height=&#34;30&#34;&gt;
+&lt;/a&gt;
+&lt;a href=&#34;mailto:your-email@example.com&#34;&gt;
+  &lt;img src=&#34;https://upload.wikimedia.org/wikipedia/commons/thumb/4/4e/Mail_%28iOS%29.svg/640px-Mail_%28iOS%29.svg.png&#34; alt=&#34;Email&#34; width=&#34;30&#34; height=&#34;30&#34;&gt;
+&lt;/a&gt;
+&lt;a href=&#34;https://some.tm.me&#34; target=&#34;_blank&#34;&gt;
+  &lt;img src=&#34;https://upload.wikimedia.org/wikipedia/commons/8/82/Telegram_logo.svg&#34; alt=&#34;Telegram&#34; width=&#34;30&#34; height=&#34;30&#34;&gt;
+&lt;/a&gt;
+&lt;/div&gt;
+</description>
+        </item>
+        
+    </channel>
+</rss>
